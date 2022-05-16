@@ -1,0 +1,15 @@
+{
+  "name": "dissfall-nvim-config",
+  "version": "1.0.0",
+  "description": "neovim configuration </> with ❤️  by @dissfall",
+  "main": "dist/index.lua",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nvim",
+    "typescript"
+  ],
+  "author": "Heorhi Lukyanau <dissfall@fastmail.com>",
+  "license": "ISC"
+}
