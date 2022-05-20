@@ -11,5 +11,8 @@
     "typescript"
   ],
   "author": "Heorhi Lukyanau <dissfall@fastmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "typescript-to-lua": "^1.4.4"
+  }
 }
