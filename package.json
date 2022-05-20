@@ -4,7 +4,8 @@
   "description": "neovim configuration </> with ❤️  by @dissfall",
   "main": "dist/index.lua",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tstl",
+    "dev": "tstl --watch"
   },
   "keywords": [
     "nvim",
