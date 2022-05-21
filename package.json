@@ -5,7 +5,9 @@
   "main": "dist/index.lua",
   "scripts": {
     "build": "tstl",
-    "dev": "tstl --watch"
+    "dev": "tstl --watch",
+    "setup": "npm run build && cp dist/init.lua ~/.config/nvim",
+    "start": "nvim -u ./dist/init.lua"
   },
   "keywords": [
     "nvim",
