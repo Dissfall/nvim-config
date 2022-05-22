@@ -1,12 +1,12 @@
-import { Plug } from './plug';
+import {Plug} from './plug';
 
 /** @noSelf */
 interface Vim {
   call: (functionName: string, args?: string) => any;
   fn: {
     [index: string]: (...[]: any) => any;
-    'plug#': Plug
-  }
+    'plug#': Plug;
+  };
 }
 
-export { Vim };
+export {Vim};

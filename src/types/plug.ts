@@ -8,4 +8,4 @@ interface PlugParameters {
   do?: () => any;
 }
 
-export { Plug };
+export {Plug};

@@ -1,6 +1,4 @@
-import { Vim } from './vim';
-
-export {};
+import {Vim} from './vim';
 
 declare global {
   const vim: Vim;
