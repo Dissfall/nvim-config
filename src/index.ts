@@ -1,7 +1,4 @@
-const plug = vim.fn['plug#'];
+import {processPlugins} from './helpers/process-plugins';
+import {plugins} from './plugins';
 
-vim.call('plug#begin', '~/.config/nvim/plugged');
-
-plug('tpope/vim-sensible');
-
-vim.call('plug#end');
+processPlugins(plugins);

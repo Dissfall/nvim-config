@@ -1,11 +1,17 @@
 /** @noSelfInFile */
 
-type Plug = (plugin: string, parameters?: PlugParameters) => void;
+type Plug = (pluginName: string, parameters?: PlugParameters) => void;
+
+type PlugPluginData = [
+  string,
+  PlugParameters,
+] | string;
 
 interface PlugParameters {
   on?: string | string[];
   for?: string;
-  do?: () => any;
+  do?: () => void;
+  branch?: string;
 }
 
-export {Plug};
+export {Plug, PlugPluginData, PlugParameters};
