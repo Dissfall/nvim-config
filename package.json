@@ -9,7 +9,8 @@
     "setup": "npm run build && cp dist/init.lua ~/.config/nvim",
     "start": "nvim -u ./dist/init.lua",
     "lint": "xo",
-    "lint:fix": "xo --fix"
+    "lint:fix": "xo --fix",
+    "prepare": "husky install"
   },
   "keywords": [
     "nvim",
@@ -18,7 +19,14 @@
   "author": "Heorhi Lukyanau <dissfall@fastmail.com>",
   "license": "ISC",
   "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^8.0.1",
     "typescript-to-lua": "^1.4.4",
     "xo": "^0.49.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
