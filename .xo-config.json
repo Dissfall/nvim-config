@@ -1,0 +1,7 @@
+{
+	"space": true,
+  "rules": {
+    "import/extensions": "off",
+    "no-empty-pattern": "off"
+  }
+}
