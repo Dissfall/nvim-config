@@ -42,7 +42,7 @@ return {
       },
     });
 
-		vim.keymap.set("n", "<C-n>", ":Neotree filesystem reveal left<CR>", {})
-		vim.keymap.set("n", "<leader>bf", ":Neotree buffers reveal float<CR>", {})
+		vim.keymap.set("n", "<leader>ee", ":Neotree filesystem toggle left<CR>", { desc = "Toggle file explorer" })
+		vim.keymap.set("n", "<leader>eb", ":Neotree buffers toggle float<CR>", { desc = "Toggle buffers explorer" })
 	end,
 }
