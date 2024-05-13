@@ -4,11 +4,11 @@ return {
     "preservim/vimux"
   },
   config = function()
-    vim.keymap.set("n", "<leader>t", ":TestNearest<CR>", {})
-    vim.keymap.set("n", "<leader>T", ":TestFile<CR>", {})
-    vim.keymap.set("n", "<leader>a", ":TestSuite<CR>", {})
-    vim.keymap.set("n", "<leader>l", ":TestLast<CR>", {})
-    vim.keymap.set("n", "<leader>g", ":TestVisit<CR>", {})
+    vim.keymap.set("n", "<leader>trn", ":TestNearest<CR>", { desc = "Run nearest test" })
+    vim.keymap.set("n", "<leader>trn", ":TestFile<CR>", { desc = "Run test file" })
+    vim.keymap.set("n", "<leader>trs", ":TestSuite<CR>", { desc = "Run test suite" })
+    vim.keymap.set("n", "<leader>trl", ":TestLast<CR>", { desc = "Run last test" })
+    vim.keymap.set("n", "<leader>gt", ":TestVisit<CR>", { desc = "Go to test" })
     vim.cmd("let test#strategy = 'vimux'")
   end,
 }
