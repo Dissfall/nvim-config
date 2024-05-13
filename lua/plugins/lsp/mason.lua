@@ -21,14 +21,12 @@ return {
 
     mason_lspconfig.setup({
       ensure_installed = {
-        "tsserver",
+        "vtsls",
         "html",
         "cssls",
         "tailwindcss",
-        "svelte",
         "lua_ls",
         "graphql",
-        "emmet_ls",
         "prismals",
         "pyright",
       },
