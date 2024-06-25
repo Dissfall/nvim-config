@@ -3,10 +3,13 @@ return {
   dependencies = {
     "williamboman/mason-lspconfig.nvim",
     "WhoIsSethDaniel/mason-tool-installer.nvim",
+    "mfussenegger/nvim-dap",
+    "jay-babu/mason-nvim-dap.nvim",
   },
   config = function()
     local mason = require("mason")
     local mason_lspconfig = require("mason-lspconfig")
+    local mason_dap = require("mason-nvim-dap")
     local mason_tool_installer = require("mason-tool-installer")
 
     mason.setup({
@@ -29,6 +32,12 @@ return {
         "graphql",
         "prismals",
         "pyright",
+      },
+    })
+
+    require("mason-nvim-dap").setup({
+      ensure_installed = {
+        "js-debug-adapter",
       },
     })
 
